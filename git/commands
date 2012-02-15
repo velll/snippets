@@ -1,0 +1,44 @@
+Global configuration
+$ git config --global user.name "<name>"
+$ git config --global user.email "<email>"
+
+all stored in ~/.gitconfig
+
+New repo
+$ git init && touch .gitignore && git add .gitignore && git commit -a -m "Initial commit"
+
+Existing repo
+$ git clone <repo-url>
+
+Stage
+$ git add <file>
+
+Stage all
+$ git add .
+
+Commit staged
+$ git commit
+$ git commit -m "Short commit message"
+
+Commit all modified
+$ git commit -a
+
+Send to remote
+$ git push
+$ git push <remote> <branch>
+
+Branches
+$ git checkout -b <newbranch>
+$ git checkout <existing-branch>
+
+Merge other branch into current
+$ git merge <other-branch>
+
+Fetch vs pull
+$ git fetch
+$ git pull
+
+Pull = Fetch + Merge
+
+Bisect
+$ git bisect
