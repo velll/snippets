@@ -1,0 +1,13 @@
+# Новые ключи
+ssh-keygen -t rsa -b 1024
+
+
+ssh <host>
+
+ssh <username>@<host>
+
+ssh -L <локальный-порт>:localhost:<порт-на-хосте> <host>
+
+-nNT — туннели без терминала
+
+ssh  -L <локальный-порт>:localhost:<порт-на-хосте> <host>

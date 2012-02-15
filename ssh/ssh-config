@@ -1,0 +1,10 @@
+# Общие параметры
+Host *
+ForwardAgent yes
+
+# Параметры конкретного хоста
+Host <имя для консоли>
+HostName <hostname - ip или url>
+User <username на удаленной машине если отличается>
+# Проброс портов
+LocalForward <local-port> 127.0.0.1:<remote-port>
