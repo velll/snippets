@@ -1,0 +1,14 @@
+start screen
+$ screen
+
+detach
+Ctrl + A -> Ctrl + D
+
+check running screens
+$ screen -ls
+
+resume
+$ screen -r <screen>
+
+if there's just one then just
+$ screen -r
