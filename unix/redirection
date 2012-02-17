@@ -1,0 +1,5 @@
+< take file as INPUT
+> route the OUTPUT to a file
+
+Overwrite
+$ echo "*.log" > .gitignore
