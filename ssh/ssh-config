@@ -8,3 +8,6 @@ HostName <hostname - ip или url>
 User <username на удаленной машине если отличается>
 # Проброс портов
 LocalForward <local-port> 127.0.0.1:<remote-port>
+
+# Разные ключи
+IdentityFile ~/.ssh/id_rsa.github
