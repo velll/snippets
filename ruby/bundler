@@ -1,0 +1,10 @@
+$ gem install bundler
+
+install gems
+$ bundle
+
+execute a script with gems from gemfile
+$ bundle exec <command>
+
+update single gem
+$ bundle update --source <gem-name>
