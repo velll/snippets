@@ -1,0 +1,9 @@
+find a bug by bisecting commit log
+
+$ git bisect start
+
+has bug?
+$ git bisect bad
+
+doesn't have bug?
+$ git bisect good
