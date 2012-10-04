@@ -1,0 +1,16 @@
+// get element by id
+var element = document.getElementById(id);
+
+// get all elements by css selector
+var nodeList = document.querySelectorAll(".some > css.selector")
+
+// also woks for elements
+var nodeList = element.querySelectorAll(".some > css.selector")
+
+// get first element by selector
+var element = document.querySelector(".some > css.selector")
+
+// also helpful
+var nodeList = document.getElementsByClassName("classname")
+var nodeList = document.getElementsByTagName("div")
+var nodeList = document.getElementsByName("element-name-value")
