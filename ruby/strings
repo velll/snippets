@@ -1,0 +1,8 @@
+Weird and unsafe concatenation
+"It's " + Time.now.to_s + " already"
+
+Interpolation
+"It's #{Time.now} already"
+
+String formatting
+"It's %s already" % Time.now
