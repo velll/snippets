@@ -1,0 +1,5 @@
+export changes to a patch file
+$ git diff > patch-file
+
+apply patch file
+$ git apply patch-file
