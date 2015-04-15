@@ -1,0 +1,17 @@
+Simple HTTP request
+$ curl http://example.com
+
+Save output
+$ curl http://example.com -o example.html
+
+Silent (just run the request)
+$ curl -s http://example.com
+
+Verbose (headers and stuff)
+$ curl -v http://example.com
+
+Basic authentication
+$ curl -u login:password http://example.com
+
+Params
+$ curl -d param="value" http://example.com
