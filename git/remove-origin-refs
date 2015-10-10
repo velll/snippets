@@ -1,0 +1,5 @@
+remove local branch
+$ git branch -d branchname
+
+remove branch
+$ git push origin :branchname
