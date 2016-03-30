@@ -1,0 +1,2 @@
+unpack
+$ tar -xvzf package.tgz 
