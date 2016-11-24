@@ -1,0 +1,8 @@
+Install package
+$ pip install flask
+
+Save installed packages list to file
+$ pip freeze > requirements.txt
+
+Install packages from requirements list
+$ pip install -r requirements.txt
