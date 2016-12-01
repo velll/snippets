@@ -1,0 +1,22 @@
+# Obscure colon syntax for working with lists
+
+>>> a = [1, 2, 3, 4, 5]
+
+# slicing list[start:end:step]
+
+>>> a[1:]
+[2, 3, 4, 5]
+
+>>> a[1:-1]
+[2, 3, 4]
+
+>>> a[1:-1:2]
+[2, 4]
+
+# reverse
+
+>>> a[::-1]
+[5, 4, 3, 2, 1]
+
+>>> a[:0:-1]
+[5, 4, 3, 2]
