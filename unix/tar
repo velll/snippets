@@ -1,2 +1,8 @@
-unpack
-$ tar -xvzf package.tgz 
+create a tar.gz package
+$ tar cvzf targetfile.tar.gz sourcedirectory
+
+unpack a tar.gz package
+$ tar -xvzf package.tgz
+
+unpack a tar package
+$ tar xvf archive.tar
