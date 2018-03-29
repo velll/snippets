@@ -1,0 +1,26 @@
+parentheses are used to enclose groups
+/(ex)amp(le)/
+
+Good for OR
+
+/(tr|kn)ee/ — will match both 'tree' and 'knee'
+
+Good for capturing parts of strings using groups
+
+# E.g. in ruby:
+string = "example"
+one, two = string.match(/(ex)amp(le)/).captures
+=> ["ex", "le"]
+
+Refer back to a group
+
+([abc])\1              \1 matches the same part that was matched by the 1st group
+
+"foobarfoo".match(/(foo).*(r\1)/).captures
+=> ["foo", "rfoo"]
+
+works with '\2', '\3' and so on.
+
+To ignore a group (don't want to capture but only want to OR)
+
+/(?:c|d)ar(t)/ — will not capture 'c' or 'd' but will capture last 't'
