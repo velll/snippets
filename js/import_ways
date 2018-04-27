@@ -1,0 +1,8 @@
+I'll figure it later.
+https://medium.com/@arunrajeevan/import-export-vs-require-module-exports-572f63516745
+
+import {} from './'
+
+vs
+
+require './'
