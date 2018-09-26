@@ -3,8 +3,9 @@ CREATE INDEX <index-name>
 ON <table-name> (<column-name>)
 INDEXTYPE IS CTXSYS.CONTEXT
 PARAMETERS ('DATASTORE <datastore-name>
-             STOPLIST <stoplist-name>
-             WORDLIST <wordlist-name>')
+             WORDLIST <wordlist-name>
+             LEXER <lexer-name>
+             STOPLIST <stoplist-name>')
 
 -- Synchronize index contents
 exec CTX_DDL.SYNC_INDEX(:index_name);
@@ -14,6 +15,22 @@ exec CTX_DDL.OPTIMIZE_INDEX(:index_name, 'REBUILD');
 alter index <index-name> rebuild;
 
 -- Parameters
+-- Datastore — indexing more than one column or function
+-- Stoplist — list of tokens to ignore
+-- Wordlist — weird preferences (fuzzy search, substring indexing, etc)
+-- Lexer - token preferences (printjoins, etc)
+BEGIN
+  CTX_DDL.CREATE_PREFERENCE(:wordlist_name, 'BASIC_WORDLIST');
+  CTX_DDL.SET_ATTRIBUTE(:wordlist_name, 'SUBSTRING_INDEX', 'YES');
+END;
+/
+
+BEGIN
+  CTX_DDL.CREATE_PREFERENCE(:lexer_name, 'BASIC_LEXER');
+  -- do not 'tokenize' by '/'
+  CTX_DDL.SET_ATTRIBUTE(:lexer_name, 'PRINTJOINS', '/');
+END;
+/
 
 -- Commands for creating and dropping stoplists
 BEGIN
@@ -21,12 +38,12 @@ BEGIN
     stoplist_name => :stoplist_name,
     stoplist_type => 'BASIC_STOPLIST');
 END;
-
+/
 BEGIN
   CTX_DDL.DROP_STOPLIST(
     stoplist_name => :stoplist_name);
 END;
-
+/
 -- Create and index without a stoplist first.
 -- Check the most common tokens in dr$<index-name>$i.
 -- Add stopwords
@@ -35,7 +52,7 @@ BEGIN
     stoplist_name => :stoplist_name,
     stopword      => :token);
 END;
-
+/
 -- If you want to check existing stopwords, query CTX_STOPWORDS
 select *
 from   CTX_STOPWORDS
