@@ -1,0 +1,8 @@
+# List existing indexes
+> db.bands.getIndexes()
+
+# Create index
+> db.bands.createIndex( { year_started: 1 }, {name: "year started index"} )
+
+# Create descending index
+> db.bands.createIndex( { year_started: -1 }, {name: "descending year started index"} )
