@@ -1,3 +1,7 @@
+---
+title: 'Tracking space usage'
+---
+```bash
 $ df -H
 
 Filesystem      Size  Used Avail Use% Mounted on
@@ -7,7 +11,9 @@ tmpfs           206M   21M  185M  11% /run
 tmpfs           1.1G     0  1.1G   0% /dev/shm
 tmpfs           5.3M     0  5.3M   0% /run/lock
 tmpfs           1.1G     0  1.1G   0% /sys/fs/cgroup
+```
 
+```bash
 $ du -h /path/to/directory/ --max-depth=1 | sort -rh | head -20
 
 6.2G	/
@@ -17,3 +23,4 @@ $ du -h /path/to/directory/ --max-depth=1 | sort -rh | head -20
 84M	/boot
 76M	/home
 ...
+```

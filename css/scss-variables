@@ -1,5 +1,0 @@
-$blue: #428bca;
-
-body {
-  color: $blue;
-}

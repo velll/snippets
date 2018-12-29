@@ -1,3 +1,7 @@
+---
+title: 'Static site configuration example'
+---
+```
 server {
   # server name (for virtual server configuration)
   # this server will only listen to requests made to this name
@@ -18,3 +22,4 @@ server {
     try_files $uri $uri.html $uri/ =404;
   }
 }
+```

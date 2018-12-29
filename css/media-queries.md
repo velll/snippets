@@ -1,3 +1,7 @@
+---
+title: 'Media queries'
+---
+```css
 @media (min-width: 992px) {
   /* laptops and desktops */
   .square {
@@ -18,3 +22,4 @@
     color: blue;
   }
 }
+```

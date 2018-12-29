@@ -1,3 +1,7 @@
+---
+title: 'Caching static media'
+---
+```
 server {
 ...
   # media cache
@@ -6,3 +10,4 @@ server {
   }
 ...
 }
+```
