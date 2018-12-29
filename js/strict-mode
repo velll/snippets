@@ -1,9 +1,0 @@
-"use strict";
-a = 1; // Will throw an error
-
-// also works at the beginning of function
-
-function foo() {
-  "use strict";
-  b = 10;   // Throws error
-}

@@ -1,16 +1,29 @@
-// get element by id
+---
+title: 'DOM selector functions'
+---
+Get element by id
+{% highlight js %}
 var element = document.getElementById(id);
+{% endhighlight %}
 
-// get all elements by css selector
+Get all elements by css selector
+{% highlight js %}
 var nodeList = document.querySelectorAll(".some > css.selector")
+{% endhighlight %}
 
-// also woks for elements
+Also woks for elements
+{% highlight js %}
 var nodeList = element.querySelectorAll(".some > css.selector")
+{% endhighlight %}
 
-// get first element by selector
+Get first element by selector
+{% highlight js %}
 var element = document.querySelector(".some > css.selector")
+{% endhighlight %}
 
-// also helpful
+Also helpful
+{% highlight js %}
 var nodeList = document.getElementsByClassName("classname")
 var nodeList = document.getElementsByTagName("div")
 var nodeList = document.getElementsByName("element-name-value")
+{% endhighlight %}

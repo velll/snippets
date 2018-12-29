@@ -31,12 +31,18 @@ github_username:  velll
 # Build settings
 theme: minima
 
-collections:
-  drone_io:
-    relative_directory: "drone-io"
-    output: true
+header_pages:
+  - about.md
 
 chapters:
+  - title: "Oracle DB development"
+    dir: "/oracle/dev/"
+  - title: "Ruby"
+    dir: "/ruby/"
+  - title: "SQL"
+    dir: "/sql/"
+  - title: JS
+    dir: '/js/'
   - title: GIT
     dir: '/git/'
   - title: Iptables
@@ -47,24 +53,25 @@ chapters:
     dir: "/nginx/"
   - title: "Oracle DB administration"
     dir: "/oracle/dba/"
-  - title: "Oracle DB development"
-    dir: "/oracle/dev/"
   - title: 'PostgreSQL'
     dir: "/postgresql/"
   - title: "Python"
     dir: "/python/"
   - title: "Regex"
     dir: "/regex/"
-  - title: "Ruby"
-    dir: "/ruby/"
-  - title: "SQL"
-    dir: "/sql/"
   - title: "SSH"
     dir: "/ssh/"
   - title: "Unix"
     dir: "/unix/"
   - title: "Vim"
     dir: "/vim/"
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: page
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
