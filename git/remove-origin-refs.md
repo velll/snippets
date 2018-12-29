@@ -2,21 +2,21 @@
 title: 'Removing objects in origin'
 ---
 Remove local branch
-{% highlight bash %}
+```bash
 $ git branch -d <branch-name>
-{% endhighlight %}
+```
 
 Remove origin branch
-{% highlight bash %}
+```bash
 $ git push origin :<branch-name>
-{% endhighlight %}
+```
 
 Remove local tag
-{% highlight bash %}
+```bash
 $ git tag -d <tag-name>
-{% endhighlight %}
+```
 
 Remove origin tag
-{% highlight bash %}
+```bash
 $ git push origin :refs/tags/<tag-name>
-{% endhighlight %}
+```
