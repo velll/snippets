@@ -1,5 +1,5 @@
 ---
-title: 'Basic configuration'
+title: 'Basic iptables configuration'
 ---
 ```
 *filter

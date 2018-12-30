@@ -59,8 +59,6 @@ chapters:
     dir: "/nginx/"
   - title: GIT
     dir: '/git/'
-  - title: Iptables
-    dir: "/iptables/"
   - title: "Unix"
     dir: "/unix/"
 
