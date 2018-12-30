@@ -39,32 +39,30 @@ chapters:
     dir: "/oracle/dev/"
   - title: "Ruby"
     dir: "/ruby/"
-  - title: "SQL"
-    dir: "/sql/"
   - title: JS
     dir: '/js/'
-  - title: GIT
-    dir: '/git/'
-  - title: Iptables
-    dir: "/iptables/"
-  - title: Mongo DB
+  - title: CSS
+    dir: '/css/'
+  - title: 'Regular expressions'
+    dir: "/regex/"
+  - title: 'Mongo DB'
     dir: "/mongo/"
-  - title: "Nginx"
-    dir: "/nginx/"
   - title: "Oracle DB administration"
     dir: "/oracle/dba/"
   - title: 'PostgreSQL'
     dir: "/postgresql/"
   - title: "Python"
     dir: "/python/"
-  - title: "Regex"
-    dir: "/regex/"
   - title: "SSH"
     dir: "/ssh/"
+  - title: "Nginx"
+    dir: "/nginx/"
+  - title: GIT
+    dir: '/git/'
+  - title: Iptables
+    dir: "/iptables/"
   - title: "Unix"
     dir: "/unix/"
-  - title: "Vim"
-    dir: "/vim/"
 
 defaults:
   - scope:

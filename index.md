@@ -7,7 +7,7 @@ layout: home
 {% for chapter in site.chapters %}
 # {{ chapter.title }}
 
-  {% assign chapter_pages = site.pages | where_exp: "page", "page.dir == chapter.dir" | sort: "order", "last" %}
+  {% assign chapter_pages = site.pages | where_exp: "page", "page.dir == chapter.dir" | sort: "title" %}
 
   {% for page in chapter_pages  %}
 - [{{ page.title | default: page.name }}]({{ page.url }})
