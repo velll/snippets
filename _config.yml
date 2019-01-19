@@ -43,6 +43,8 @@ chapters:
     dir: '/js/'
   - title: CSS
     dir: '/css/'
+  - title: Rails
+    dir: '/rails/'
   - title: 'Regular expressions'
     dir: "/regex/"
   - title: 'Mongo DB'
