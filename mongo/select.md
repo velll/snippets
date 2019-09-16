@@ -1,6 +1,8 @@
 ---
 title: Select
 ---
+*These examples will work with data from [Inserting documents](/mongo/insert-one-many).*
+
 Prettify output to make it at least readable
 ```js
 .pretty()
