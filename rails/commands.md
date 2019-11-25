@@ -1,5 +1,5 @@
 ---
-title: 'Rails commands'
+title: 'Rails console commands'
 ---
 
 Create a new rails in a current directory
