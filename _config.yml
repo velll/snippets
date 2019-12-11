@@ -45,6 +45,8 @@ chapters:
     dir: '/css/'
   - title: Rails
     dir: '/rails/'
+  - title: Docker
+    dir: '/docker/'
   - title: 'Regular expressions'
     dir: "/regex/"
   - title: 'Mongo DB'
