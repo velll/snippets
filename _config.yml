@@ -63,8 +63,8 @@ chapters:
     dir: "/nginx/"
   - title: GIT
     dir: '/git/'
-  - title: "Unix"
-    dir: "/unix/"
+  - title: "Linux"
+    dir: "/linux/"
 
 defaults:
   - scope:
