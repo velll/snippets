@@ -57,6 +57,16 @@ List processes running in container
 $ docker container top <name-or-id>
 ```
 
+View info on container
+```
+$ docker container inspect <name>
+```
+
+Performance stats (cpu, mem, network, disk, etc)
+```
+$ docker container stats <name>
+```
+
 # Accessing a container
 
 Create a container and bash into it
