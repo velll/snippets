@@ -101,17 +101,4 @@ Remove a container. Won't stop a running container.
 $ docker container rm <ID>
 ```
 
-Forcibly remove a running container.
-```
-$ docker container rm -f <ID>
-```
-
-Remove multiple containers
-```
-$ docker container rm <ID-1> <ID-2> <ID-3>
-```
-
-Remove all containers. Will fail for running containers.
-```
-$ docker rm $(docker ps -aq)
-```
+More at [removing containers](cleaning-up)
