@@ -1,0 +1,10 @@
+---
+---
+@import "minima";
+
+@media (min-width: 992px) {
+  /* laptops and desktops */
+  div.home ul {
+    column-count: 2;
+  }
+}
