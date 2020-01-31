@@ -63,6 +63,8 @@ chapters:
     dir: "/nginx/"
   - title: GIT
     dir: '/git/'
+  - title: FFmpeg
+    dir: '/ffmpeg/'
   - title: "Linux"
     dir: "/linux/"
 
