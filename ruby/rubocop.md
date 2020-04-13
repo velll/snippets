@@ -18,6 +18,11 @@ Same but for cowboys!
 $ bundle exec rubocop -a
 ```
 
+Do that to staged files only
+```bash
+rubocop -a `git diff --name-only --cached | grep '\.rb'`
+```
+
 Generate a 'todo' config file to exclude all current isssues
 ```bash
 $ rubocop --auto-gen-config
