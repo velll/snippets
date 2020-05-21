@@ -7,6 +7,11 @@ Create a new rails in a current directory
 $ rails new .
 ```
 
+What you actually need
+```bash
+rails new --skip-test --webpack=react --skip-action-mailer --database=postgres
+```
+
 Scaffolding a new resource (controller, model, views, routes)
 ```bash
 $ rails generate scaffold name attribute:type
