@@ -24,3 +24,15 @@ $ du -h /path/to/directory/ --max-depth=1 | sort -rh | head -20
 76M	/home
 ...
 ```
+
+Block devices
+```bash
+$ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop1         7:1    0 97.1M  1 loop /snap/core/9993
+loop2         7:2    0 28.1M  1 loop /snap/amazon-ssm-agent/2012
+loop3         7:3    0   18M  1 loop /snap/amazon-ssm-agent/1566
+loop4         7:4    0 96.6M  1 loop /snap/core/9804
+nvme0n1     259:0    0    8G  0 disk
+└─nvme0n1p1 259:1    0    8G  0 part /
+```
