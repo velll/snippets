@@ -33,7 +33,6 @@ This won't work
 def empty_list(self):
 ```
 
-
 ## Fixing weird import errors
 
 `conftest.py` is a pytest configuration file. More importantly, its location defines the root dir for imports.
@@ -68,4 +67,10 @@ repo
 └── tests
      ├── test_tyler.py
      └── test_wilson.py
+```
+
+## Debugger
+Pytest will capture STDOUT and STDIN so the debugger won't work. Disable the capturing with `-s` option
+```bash
+$ pytest -s
 ```
