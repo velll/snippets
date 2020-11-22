@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: build
-  image: ruby:2.6.4
+  image: ruby:2.5.1
   commands:
   - gem install bundler
   - bundle
