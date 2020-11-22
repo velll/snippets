@@ -1,0 +1,34 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: build
+  image: ruby:2.6.4
+  commands:
+  - gem install bundler
+  - bundle
+  - bundle exec jekyll build
+  environment:
+    LANG: "C.UTF-8"
+- name: deploy
+  image: drillster/drone-rsync
+  settings:
+    hosts: [ "vps608404.ovh.net" ]
+    user: snippets
+    source: _site/
+    target: /home/snippets/snippets/
+    recursive: true
+    delete: true
+    key:
+      from_secret: paulgoesdeep_snippets_ssh_key
+  when:
+    branch:
+    - master
+    status:
+    - success
+
+trigger:
+  branch:
+  - master
