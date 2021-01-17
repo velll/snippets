@@ -71,9 +71,3 @@ Each char:
 for char in 'string':
      process(char)
 ```
-
-List of chars
-```python
->>> list('string')
-['s', 't', 'r', 'i', 'n', 'g']
-```
