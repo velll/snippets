@@ -1,7 +1,6 @@
 ---
 title: 'Python collections: sets'
 ---
-
 ```python
 numericSet = {1, 13, 34}
 ```
@@ -22,7 +21,6 @@ list.update({100, 200})
 
 Create a new set with new elements
 ```python
-
 {*numericSet, 100, 200}
 # {1, 13, 34, 100, 200}
 ```

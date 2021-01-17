@@ -44,7 +44,6 @@ for key in {'height', 'weight'}:
     process(key)
 ```
 
-
 # Dicts
 
 Each key:
