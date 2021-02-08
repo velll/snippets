@@ -57,6 +57,8 @@ chapters:
     dir: "/postgresql/"
   - title: "Python"
     dir: "/python/"
+  - title: "Go / Golang"
+    dir: "/golang/"
   - title: "SSH"
     dir: "/ssh/"
   - title: "Nginx"
