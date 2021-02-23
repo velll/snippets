@@ -55,6 +55,8 @@ chapters:
     dir: "/oracle/dba/"
   - title: 'PostgreSQL'
     dir: "/postgresql/"
+  - title: AWS
+    dir: '/aws/'
   - title: "Python"
     dir: "/python/"
   - title: "Go / Golang"

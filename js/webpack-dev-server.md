@@ -10,3 +10,18 @@ Switch off hot reload (you will have to manually refresh the page)
 ```bash
 $ yarn webpack-dev-server --no-inline --no-hot
 ```
+
+Proxy to backend api
+```js
+devServer: {
+  proxy: {
+    "/api": {
+        "target": "http://localhost:9393/",
+        "pathRewrite": {
+                "^/api" : ""
+        },
+        "changeOrigin": true
+    }
+  }
+}
+```
